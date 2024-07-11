@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, Text } from 'react-native';
 import AppLoading from 'expo-app-loading';
+import { StatusBar } from 'expo-status-bar';
 import { ThemeProvider } from 'styled-components/native';
 
 import {
@@ -35,11 +36,18 @@ const Home: React.FC = () => {
 
   return (
     <ThemeProvider theme={COLORS}>
+      <StatusBar
+        style='dark'
+        translucent
+        backgroundColor='transparent'
+      />
+
       <View
         style={{
           flex: 1,
           justifyContent: 'center',
-          alignItems: 'center'
+          alignItems: 'center',
+          backgroundColor: COLORS.COLORS.ATTENTION_LIGHT4
         }}
       >
         <Text>Wallet App</Text>
