@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, Text } from 'react-native';
 import AppLoading from 'expo-app-loading';
+import { ThemeProvider } from 'styled-components/native';
 
 import {
   useFonts,
@@ -14,6 +15,8 @@ import {
 import { DMSans_400Regular } from '@expo-google-fonts/dm-sans';
 
 import { DMSerifDisplay_400Regular } from '@expo-google-fonts/dm-serif-display'
+
+import COLORS from '../src/styles/theme'
 
 const Home: React.FC = () => {
   const [ fontsLoaded ] = useFonts({
@@ -31,15 +34,17 @@ const Home: React.FC = () => {
   }
 
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
-      }}
-    >
-      <Text>Wallet App</Text>
-    </View>
+    <ThemeProvider theme={COLORS}>
+      <View
+        style={{
+          flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}
+      >
+        <Text>Wallet App</Text>
+      </View>
+    </ThemeProvider>
   );
 }
 
