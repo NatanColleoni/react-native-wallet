@@ -4,17 +4,41 @@
     "strict": true,
     "baseUrl": "./",
     "paths": {
-      "@src/*": ["./src/*"],
-      "@assets/*": ["./assets/*"],
-      "@components/*": ["./components/*"],
-      "@config/*": ["./config/*"],
-      "@hooks/*": ["./hooks/*"],
-      "@routes/*": ["./routes/*"],
-      "@screens/*": ["./screens/*"],
-      "@services/*": ["./services/*"],
-      "@styles/*": ["./styles/*"],
-      "@utils/*": ["./utils/*"],
+      "@src/*": [
+        "./src/*"
+      ],
+      "@assets/*": [
+        "./assets/*"
+      ],
+      "@components/*": [
+        "./components/*"
+      ],
+      "@config/*": [
+        "./config/*"
+      ],
+      "@hooks/*": [
+        "./hooks/*"
+      ],
+      "@routes/*": [
+        "./routes/*"
+      ],
+      "@screens/*": [
+        "./screens/*"
+      ],
+      "@services/*": [
+        "./services/*"
+      ],
+      "@styles/*": [
+        "./styles/*"
+      ],
+      "@utils/*": [
+        "./utils/*"
+      ]
     }
   },
-  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-dev.d.ts"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "expo-dev.d.ts"
+  ]
 }
