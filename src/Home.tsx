@@ -15,9 +15,11 @@ import {
 
 import { DMSans_400Regular } from '@expo-google-fonts/dm-sans';
 
-import { DMSerifDisplay_400Regular } from '@expo-google-fonts/dm-serif-display'
+import { DMSerifDisplay_400Regular } from '@expo-google-fonts/dm-serif-display';
 
-import COLORS from '../src/styles/theme'
+import COLORS from '../src/styles/theme';
+
+import { Login } from './screens/Login/Login';
 
 const Home: React.FC = () => {
   const [ fontsLoaded ] = useFonts({
@@ -42,15 +44,8 @@ const Home: React.FC = () => {
         backgroundColor='transparent'
       />
 
-      <View
-        style={{
-          flex: 1,
-          justifyContent: 'center',
-          alignItems: 'center',
-          backgroundColor: COLORS.COLORS.ATTENTION_LIGHT4
-        }}
-      >
-        <Text>Wallet App</Text>
+      <View>
+        <Login />
       </View>
     </ThemeProvider>
   );
